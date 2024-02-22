@@ -1,0 +1,31 @@
+{
+	"name": "scheduletrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline_multiplthttp",
+					"type": "PipelineReference"
+				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "pipelinemetadata",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 5,
+				"startTime": "2024-02-21T09:13:37",
+				"endTime": "2024-02-21T15:15:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
